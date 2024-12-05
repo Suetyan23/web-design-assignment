@@ -373,8 +373,21 @@ margin-right: 10%;
   margin: 0 auto;
 }
 
-.tesla{
-  height: 300px;
+.tesla, .deanlist {
+  width: 100%; /* Makes the iframe take up full width of its container */
+  max-width: 400px; /* Limits the maximum width */
+  height: 300px; /* Adjusts the height automatically */
+  aspect-ratio: 16/9; /* Ensures a consistent aspect ratio */
+  border: none; /* Removes border for a cleaner look */
+  margin: 0 auto; /* Centers the iframe in its container */
+  display: block; /* Ensures proper centering */
+}
+
+@media (max-width: 768px) {
+  .tesla, .deanlist {
+    max-width: 90%; /* Reduce size for smaller screens */
+    height: 300px; /* Adjust height for better fit on smartphones */
+  }
 }
 /*end about*/
 /*start features*/
