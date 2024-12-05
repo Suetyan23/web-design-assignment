@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="Portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freehand&family=Fuzzy+Bubbles:wght@400;700&family=Rubik+Gemstones&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/wordcloud@1.2.3/src/wordcloud2.min.js"></script>
+    <script defer src="Portfolio.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <a href="#Home"><h2 class="logo">Suet Yan</h2></a>
+        <i id="mode" class="fa-solid fa-sun" style="color: #ffd43b"></i>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Certifications">Certifications</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Landing -->
+    <section id="Home">
+      <div>
+        <img class="profile-pic" src="myPhoto.jpeg" />
+      </div>
+
+      <div class="introduction">
+        <div>
+          <h1>Hi, there <span class="hi-emoji">👋🏻</span></h1>
+          <h1>I'm <span class="name">Chang Suet Yan</span></h1>
+          <br />
+          <p class="desc">
+            I specialize in data analysis and visualization to enhance business
+            strategies and decision-making. With a focus on turning complex data
+            into actionable insights, I am committed to contributing to
+            innovative tech companies through my analytical expertise and
+            dedication to creating seamless user experiences. Let’s discover how
+            my unique blend of analytical skills and creativity can drive the
+            team’s success! <br />
+          </p>
+        </div>
+
+        <div>
+          <img class="linkedIn-image" src="linkedin.png" alt="linkedin" />
+          <a
+            class="linkedin"
+            href="https://www.linkedin.com/in/suet-yan-chang-557995245/"
+            target="_blank"
+            >LinkedIn_Chang Suet Yan</a
+          >
+        </div>
+
+        <div class="cvbutton">
+          <button class="dbutton" onclick="openPDF('Chang Suet Yan CV.pdf')">
+            View Resume
+          </button>
+        </div>
+      </div>
+      <footer></footer>
+    </section>
+    <!--End Landing-->
+
+    <!--start gallery-->
+<section id="Gallery" class="container">
+  <div class="gallery-title">
+    <h1>Gallery</h1>
+  </div>
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="gallery1.jpeg" alt="Travel photo 1">
+    </div>
+    <div class="gallery-item">
+      <img src="gallery2.jpeg" alt="Travel photo 2">
+    </div>
+    <div class="gallery-item">
+      <img src="gallery3.jpeg" alt="Travel photo 3">
+    </div>
+    <div class="gallery-item">
+      <img src="gallery4.jpeg" alt="Travel photo 4">
+    </div>
+  </div>
+</section>
+<!--end gallery-->
+
+    <!-- Start About -->
+    <section id="Education" class="container">
+      <div class="about">
+        <h1>Education</h1>
+        <br />
+        <p class="edu-desc">
+          Discover my educational pathway and competencies, emphasizing my
+          proficiency in business analytics and data-driven decision-making. The following are key assignments I have completed, each demonstrating my ability to apply analytical techniques to real-world business challenges
+        </p>
+      </div>
+
+      <div>
+        <div class="edu-sunway">
+          <h1>
+            👩🏻‍🎓 Bachelor degree of Business Analytics (Honours) at Sunway
+            University
+          </h1>
+          <p>🌟 CGPA: 3.72 (First Class)</p>
+        </div>
+        <div>
+          <button class="ebutton" onclick="openPDF('transcript.pdf')">
+            View Transcript
+          </button>
+        </div>
+      </div>
+
+      <div class="works">
+        <div class="container">
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-dark slide hidden"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+  
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+  
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+  
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <iframe
+                  class="carousel-image"
+                  title="Chang Suet Yan_22016521"
+                  width="600"
+                  height="373.5"
+                  src="https://app.powerbi.com/view?r=eyJrIjoiYmJjN2FlMTctMjAwMS00YWQxLWFiYzYtMDQyZjAzM2IwY2FmIiwidCI6IjUzN2MyYmUxLWZjZDQtNDVhOS04M2IzLTY2NTNlYWNjNTA3MCIsImMiOjEwfQ%3D%3D"
+                  frameborder="0"
+                  allowfullscreen="true"
+                ></iframe>
+                <div>
+                  <p class="carousel-description">
+                    Project Dashboard Management System to monitor the performance
+                    of Budgeted Items with the Committed and Actualize amount to
+                    control the cost for the entire project using <b>Power BI</b
+                    ><br />
+                  </p>
+                </div>
+              </div>
+  
+              <div class="carousel-item" data-bs-interval="2000">
+                <img class="carousel-image" src="Tableau.png" />
+                <div>
+                  <p class="carousel-description">
+                    Utilize <b>Tableau</b> to indentify trends and customer
+                    purchasing pattern on e-commerce datasets from Kaggle during
+                    and after the pandemic.<br /><a
+                      href=" https://imailsunwayedu-my.sharepoint.com/:w:/r/personal/22016521_imail_sunway_edu_my/Documents/BBA/Y3S1/Chang%20Suet%20Yan%2022016521_Task%202.docx?d=w2416c463259c4ee3b8dab00d87af83cc&csf=1&web=1&e=8pb3kk"
+                      >Link to Tableau Assignemnt</a
+                    >
+                  </p>
+                </div>
+              </div>
+  
+              <div class="carousel-item" >
+                <div class="info">
+                  <h3>More Assignment</h3>
+                  <br />
+                  <p>
+                    Web & Social Media Analytic Assignment: Perform Sentiment
+                    Analysis, Social Network Analysis and Semantic Network, to
+                    deliver crucial insights into consumer perceptions about Tesla
+                    Model 3 using <b>Python and NodeXL</b>.
+                  </p>
+                  <iframe class="tesla" src="Tesla.pdf" frameborder="0"></iframe
+                  ><br />
+                  <a
+                    href="https://imailsunwayedu-my.sharepoint.com/:w:/r/personal/22016521_imail_sunway_edu_my/Documents/BBA/Y3S1/Web%20%26%20Social%20Media%20Analytic/Assignment/Ind%20Assign%203/Chang%20Suet%20Yan_22016521.docx?d=wf9b38ddd19014679906a483d1248e30b&csf=1&web=1&e=wX2csg"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >Visit Assignment</a
+                  ><br /><br />
+  
+                  <p>
+                    Management Information Systems Assignment: Development of
+                    Graphical Analysis using combination of
+                    <b>Python</b> libraries to solve the organization Financial
+                    Expenses Monitoring from complex dimension and attributes.
+                  </p>
+                  <a
+                    href="https://youtu.be/gAQQxhWIIBE"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >Youtube Presentation</a
+                  ><br /><br />
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+  
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      </section>
+  <!-- End About -->
+   <!-- start features -->
+   <section id="Skills" class="container">
+    <div class="skills-title">
+    <h1>Skills</h1>
+      <div class="skills-container hidden">
+        <div class="skills">
+          <h2>Web development</h2>
+          <div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>React.js</li>
+              <li>PHP</li>
+              <li>mySQL</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skills">
+          <h2>Data Analysis & Visualization</h2>
+          <div>
+            <ul>
+              <li>Power BI</li>
+              <li>Tableau</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skills">
+          <h2>Programming & Scripting Languages</h2>
+          <div>
+            <ul>
+              <li>VBA</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>R programming</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </section>
+    <!-- End Features -->
+    <!--Start services-->
+    <section id="Certifications" class="container">
+      <div class="services hidden">
+      <h1>Certificates</h1>
+      
+      <div>
+        <div class="certification-content">
+          <img
+            src="GoogleHackathon.png"
+            alt="Google Hackathon Certificate"
+          />
+          <div class="certification-details">
+            <h3><u>Google Hackathon 2024</u></h3>
+            <p>
+              Leveraging Google Forms, Google Sheets, and Google Apps Script to
+              streamline the finance department's claim process: Employees fill
+              out the details in a Google Form, which automatically logs and
+              updates the data in a linked Google Sheet. Additionally, Google
+              Apps Script is used to manage the storage of receipt images in
+              Google Drive.
+            </p>
+            <a
+              href="https://api.badgr.io/public/assertions/lZdO3fxcRFa7yLKimXjVEA?identity__email=changsuetyan23%40gmail.com"
+              target="_blank"
+              >View Certificate</a
+            >
+          </div>
+          </div>
+        </div>
+
+        <div class="certification-content">
+          <iframe
+            class="deanlist"
+            src="DeanList.pdf"
+            frameborder="0"
+          ></iframe>
+          <div class="certification-details">
+            <h3><u>Dean's List Award</u></h3>
+            <p>
+              Awarded for achieving a high GPA during the April 2024 semester,
+              recognizing dedication and academic excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+      </section>
+  <!--End services-->
+      <!-- Start Footer -->
+      <div class="footer">
+        &copy; 2024 <span>Suet Yan</span> All Right Reserved | Contact Me: <u>changsuetyan23@gmail.com</u>
+      </div>
+      <!-- End Footer -->
+  </body>
+</html>
