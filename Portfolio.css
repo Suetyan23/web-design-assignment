@@ -386,7 +386,7 @@ margin-right: 10%;
 @media (max-width: 768px) {
   .tesla, .deanlist {
     max-width: 90%; /* Reduce size for smaller screens */
-    height: 300px; /* Adjust height for better fit on smartphones */
+    height: 50%; /* Adjust height for better fit on smartphones */
   }
 }
 /*end about*/
